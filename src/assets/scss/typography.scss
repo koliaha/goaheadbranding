@@ -1,0 +1,62 @@
+@use './abstracts/colors' as colors;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --document-font-family: 'Montserrat'
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body { 
+    font-family: var(--document-font-family, 'Montserrat');
+}
+
+text {
+    font-family: var(--document-font-family, 'Montserrat');
+}
+
+svg {
+    font-family: var(--document-font-family, 'Montserrat');
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: colors.$orange;
+    transition: color .3s ease;
+    &:hover {
+        font-size: colors.$pale-orange;
+    }
+}
+
+
+
+p {
+    color: colors.$dark-gray;
+    font-weight: 100;
+    line-height: 130%;
+}
+
+li {
+    color: colors.$dark-gray;
+    font-weight: 100;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
+
