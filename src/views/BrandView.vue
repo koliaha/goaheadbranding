@@ -99,9 +99,9 @@ export default {
     min-height: 322px;
     border: 1px solid $black;
     background: $white;
-    @include flex(column, center, center);
+    @include flex(column, start, center);
     text-align: center;
-    padding: 30px;
+    padding:54px 30px 0;
   }
 
 }
