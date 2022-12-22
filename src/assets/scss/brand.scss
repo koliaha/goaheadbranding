@@ -1,0 +1,76 @@
+@use './abstracts' as *;
+
+.brand-sec {
+  padding: 100px 0;
+
+  &-list {
+    @include flex(row, center,stretch);
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 60px;
+  }
+
+  &-card {
+    max-width: 403px;
+    width: 100%;
+    min-height: 322px;
+    border: 1px solid $black;
+    background: $white;
+    @include flex(column, start, center);
+    padding:54px 30px 40px;
+  }
+
+}
+
+.brand-card__logo {
+  @include flex(column, center, center);
+  margin-bottom: 30px;
+
+  &-img {
+    max-width: 91px;
+    width: 100%;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 29.828px;
+    line-height: 36px;
+    color: $black;
+    margin-top: 8px;
+
+    span {
+      color: $orange;
+    }
+  }
+}
+.brand-third{
+  padding:100px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(79, 79, 79, 0.2),
+      rgba(79, 79, 79, 0.2)
+    ),
+    url("@/assets/img/bg.jpg"), #161616;
+  width: 100%;
+  max-width: 100vw;
+  // min-height: 100vh;
+  position: relative;
+  color: $white;
+  &__list{
+    max-width: 1048px;
+    width: 100%;
+    margin: 0 auto;
+    @include flex(column);
+    gap:56px;
+  }
+  &__item{
+    max-width:629px;
+    width:100%;
+  }
+}
+.brand-forth{
+  &__text{
+    max-width:926px;
+    margin-top:28px;
+  }
+}

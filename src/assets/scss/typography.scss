@@ -63,7 +63,11 @@ section {
   width: 100%;
   margin: 0 auto;
 }
-
+.text-title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+}
 .text-prime {
   font-weight: 400;
   font-size: 24px;
@@ -74,8 +78,14 @@ section {
   font-size: 20px;
   line-height: 24px;
 }
+.text-center {
+  text-align: center;
+}
 .mb-40 {
   margin-bottom: 40px;
+}
+.flex-end {
+  align-self: flex-end;
 }
 ::-webkit-scrollbar {
   width: 7px;

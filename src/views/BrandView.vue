@@ -1,32 +1,67 @@
 <template>
   <section class="brand">
     <BrandHeader />
-    <section class="brand-second">
-      <div class="container">
-        <p class="text-prime mb-40">Go Ahead — экосистема сервисов и технологий digital-маркетинга. <br />
-          Группа компаний включает в себя:</p>
-        <div class="brand-second-list">
-          <div class="brand-second-card" v-for="i in list" :key="i.id">
-            <div class="brand-card__logo">
-              <img :src="getImgUrl(i.id)" alt="logo" class="brand-card__logo-img">
-              <div class="brand-card__logo-title"><span :style="{ color: i.logo }">go</span>{{ i.title }}</div>
-            </div>
-            <p class="brand-second-card__title text-second">
-              {{ i.subtitle }}
-            </p>
+  </section>
+  <section class="brand-sec brand-second">
+    <div class="container">
+      <p class="text-prime mb-40">Go Ahead — экосистема сервисов и технологий digital-маркетинга. <br />
+        Группа компаний включает в себя:</p>
+      <div class="brand-sec-list ">
+        <div class="brand-sec-card" v-for="i in list" :key="i.id">
+          <div class="brand-card__logo">
+            <img :src="getImgUrl(i.id)" alt="logo" class="brand-card__logo-img">
+            <div class="brand-card__logo-title"><span :style="{ color: i.logo }">go</span>{{ i.title }}</div>
           </div>
+          <p class="brand-sec-card__title text-second text-center">
+            {{ i.subtitle }}
+          </p>
         </div>
-        <p class="text-prime mb-40">Во всех визуальных материалах о Go Ahead в качестве компаний, входящих в группу,
-          указываем
-          вышеуказанные 5 брендов. К таким материалам могут относиться обложки для соцсетей, слайды презентаций,
-          видеовизитка.</p>
-        <p class="text-prime">Для маркетинговых задач мы можем ситуативно прибегать к упоминаниям других юнитов с
-          приставкой «Go». Важно понимать, что полноценными компаниями они не являются и не фигурируют на визуальных
-          материалах Go Ahead общего характера. К таким юнитам/продуктам можно отнести Go ASO, Go Consulting, Go Awards,
-          Go :nnection и т д.</p>
       </div>
-    </section>
-
+      <p class="text-prime mb-40">Во всех визуальных материалах о Go Ahead в качестве компаний, входящих в группу,
+        указываем
+        вышеуказанные 5 брендов. К таким материалам могут относиться обложки для соцсетей, слайды презентаций,
+        видеовизитка.</p>
+      <p class="text-prime">Для маркетинговых задач мы можем ситуативно прибегать к упоминаниям других юнитов с
+        приставкой «Go». Важно понимать, что полноценными компаниями они не являются и не фигурируют на визуальных
+        материалах Go Ahead общего характера. К таким юнитам/продуктам можно отнести Go ASO, Go Consulting, Go Awards,
+        Go :nnection и т д.</p>
+    </div>
+  </section>
+  <section class="brand-third">
+    <div class="container">
+      <div class="brand-third__list">
+        <div class="brand-third__item text-prime">Мы работаем на рынке мобильного маркетинга с 2016 года. За это время
+          реализовали множество проектов для наших клиентов и партнеров, выиграли внушительное количество тендеров,
+          поучаствовали в сотнях конференций и стали лидерами десятка отраслевых рейтингов.</div>
+        <div class="brand-third__item text-prime flex-end">Мы с радостью рассказываем о нашем опыте и кейсах в блоге,
+          анализируем текущую обстановку на рынке и не боимся делать прогнозы. Более того, у нас есть собственная
+          команда стратегов, которая регулярно готовит исследования различных сегментов рынка.</div>
+        <div class="brand-third__item text-prime">За 6 лет работы мы получили бесценный опыт, которым готовы делиться.
+          Именно это служит основой нашей миссии, целей и долгосрочных планов.</div>
+      </div>
+    </div>
+  </section>
+  <section class="brand-sec brand-forth">
+    <div class="container">
+      <h1 class="text-title">Наша миссия</h1>
+      <p class="text-prime mb-40 brand-forth__text">Помогать компаниям достигать своих целей и делать это лучше всех.</p>
+      <h1 class="text-title">Наши ценности</h1>
+      <p class="text-prime mb-40 brand-forth__text">Структура группы Go Ahead отражает наши ценности — свободу и развитие. Люди, которые
+        приходят в компанию наемными сотрудниками, растят в ней свои направления, выделяют их в отдельные компании и
+        получают долю бизнеса.</p>
+      <p class="text-prime mb-40 brand-forth__text">Основной принцип компании — человек должен заниматься тем, что он любит. Поэтому мы
+        всегда открыты к инициативам со стороны сотрудников — даже если это открытие нового офиса или юнита.</p>
+      <div class="brand-sec-list">
+        <div class="brand-sec-card" v-for="(i,index) in list_sec" :key="index">
+          <div class="brand-card__logo">
+            <div class="brand-card__logo-title">{{ i.title }}</div>
+          </div>
+          <p class="brand-sec-card__title text-second">
+            {{ i.subtitle }}
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -69,7 +104,33 @@ export default {
         title: 'design',
         subtitle: 'Go Design — дизайн-студия со специализацией на креативах для performance-маркетинга',
         logo: '#0053F1'
-      }]
+      }],
+      list_sec: [
+        {
+          title: 'Дело',
+          subtitle: 'Мы не работаем от звонка до звонка или строго с 11:00 до 20:00. Мы занимаемся делом, которое наши сотрудники искренне любят. Горящие глаза и желание сделать как можно лучше — вот залог успеха.',
+        },
+        {
+          title: 'Развитие',
+          subtitle: 'Мы растем с высокой скоростью и помогаем нашим сотрудникам расти вместе с компанией. Следим за трендами, активно обучаемся и обучаем всему новому.',
+        },
+        {
+          title: 'Экспертиза',
+          subtitle: 'Мы наращиваем опыт в разных сферах и не боимся браться за новые проекты. Мы можем реализовать то, что до нас еще не делал никто, и делаем это хорошо.',
+        },
+        {
+          title: 'Люди',
+          subtitle: 'Мы очень ценим наших сотрудников, помогаем им расти и прислушиваемся к каждому, ведь от них во многом зависит и наша эффективность как группы компаний. Мы заботимся о людях и результате.',
+        },
+        {
+          title: 'Авантюризм',
+          subtitle: 'В команде Go Ahead живет дух авантюризма. Мы не боимся больших и непонятных задач, всегда хотим больше новых проектов и невозможных челленджей, нам всегда интересно, что будет дальше. Нас не пугают hard KPI, и мы очень быстро учимся.',
+        },
+        {
+          title: 'Свобода',
+          subtitle: 'Мы можем реализовывать любые проекты, ведь всегда есть поддержка от команды.',
+        },
+      ]
     }
   },
   methods: {
@@ -80,52 +141,3 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-@use '@/assets/scss/abstracts' as *;
-
-.brand-second {
-  padding: 100px 0;
-
-  &-list {
-    @include flex(row, center, center);
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-bottom: 60px;
-  }
-
-  &-card {
-    max-width: 403px;
-    width: 100%;
-    min-height: 322px;
-    border: 1px solid $black;
-    background: $white;
-    @include flex(column, start, center);
-    text-align: center;
-    padding:54px 30px 0;
-  }
-
-}
-
-.brand-card__logo {
-  @include flex(column, center, center);
-  margin-bottom: 30px;
-
-  &-img {
-    max-width: 91px;
-    width: 100%;
-  }
-
-  &-title {
-    font-weight: 700;
-    font-size: 29.828px;
-    line-height: 36px;
-    text-align: center;
-    color: $black;
-    margin-top: 8px;
-
-    span {
-      color: $orange;
-    }
-  }
-}
-</style>
