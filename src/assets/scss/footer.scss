@@ -1,0 +1,23 @@
+.footer {
+  background: $light-black;
+  padding: 100px 0;
+  color: $white;
+  &-list {
+    @include flex(row, start, center);
+    gap: 100px;
+  }
+  &-logo {
+    @include flex(column, center, center);
+    &__img {
+      max-width: 60px;
+    }
+    &__title {
+      font-size: 19.278px;
+      line-height: 23px;
+      margin-top: 5px;
+    }
+  }
+  &-text {
+    max-width: 510px;
+  }
+}

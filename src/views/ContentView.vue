@@ -1,8 +1,76 @@
 <template>
-  <section class="brand">
+  <section class="content">
     <ContentHeader />
+  </section>
+  <section class="content-main">
     <div class="container">
-      asd
+      <h1 class="text-title">Tone of voice</h1>
+      <p class="text-prime mb-40 title__text">У Go Ahead смешанный ToV.</p>
+      <div class="content-main-list">
+        <div class="content-main-item">
+          <img src="@/assets/img/content/micro.png" alt="micro" class="content-main-item__img">
+          <div class="content-main-item__text text-prime"><b>В статьях и на конференциях</b> мы эксперты. Мы пишем
+            нейтральные тексты в
+            корпоративном информационном стиле. Наши материалы помогают разобраться в сложных вопросах, а выступления и
+            исследования полезны всему рынку digital.
+          </div>
+        </div>
+        <div class="content-main-item">
+          <img src="@/assets/img/content/hands.png" alt="micro" class="content-main-item__img">
+          <div class="content-main-item__text text-prime"><b>С сотрудниками</b> мы общаемся как с близкими друзьями,
+            просто и без фамильярностей. Это помогает нам строить максимально теплые взаимоотношения, благодаря чему
+            сотрудники всегда чувствуют себя «в своей тарелке», не боятся обращаться за помощью или советом, открыто
+            высказывают свои идеи, делятся мнением.
+          </div>
+        </div>
+        <div class="content-main-item">
+          <img src="@/assets/img/content/mess.png" alt="micro" class="content-main-item__img">
+          <div class="content-main-item__text text-prime"><b>С клиентами и партнерами</b> общаемся на равных, но при
+            этом дружелюбно и уважительно. Мы всегда за то, чтобы перейти на «ты» для более комфортной коммуникации,
+            однако мы не против оставаться на «вы», так как уважаем желания каждого собеседника.
+          </div>
+        </div>
+      </div>
+      <h1 class="text-title ">Аудитория</h1>
+      <p class="text-prime mb-40 title__text content-main__text-auditory">Наша аудитория — это сотрудники других
+        маркетинговых агентств, текущие и потенциальные клиенты, топ-менеджмент российских и зарубежных компаний,
+        маркетологи, фрилансеры.</p>
+      <h1 class="text-title mt-120 mb-40">Написание юнитов</h1>
+      <div class="content-main-cards">
+        <div class="content-main-card">
+          <h2 class="content-card__title ">Можно</h2>
+          <p class="content-card__subtitle text-second">Название пишется в два слова с заглавных букв и через пробел —
+            Go Ahead, Go Mobile, Go
+            Influence.</p>
+          <p class="content-card__subtitle text-second">Исключение: Go :nnection, Go NET и другие аббревиатуры,
+            например, ASO.</p>
+          <div class="line"></div>
+          <div class="card-bottom">
+            <p class="card-bottom__item"><b>Go Ahead</b>— группа специализированных сервисов и технологий
+              digital-маркетинга</p>
+            <p class="card-bottom__item"><b>Go Mobile</b> — eдиная точка входа для бизнесов в мобильный маркетинг</p>
+          </div>
+        </div>
+        <div class="content-main-card">
+          <h2 class="content-card__title ">Нельзя</h2>
+          <p class="content-card__subtitle text-second">Не стоит использовать в названии кавычки, все заглавные буквы, игнорировать пробел и комбинировать написание любым способом.</p>
+          <p class="content-card__subtitle text-second"><br/></p>
+          <div class="line"></div>
+          <div class="card-bottom">
+            <div class="card-bottom__left text-second ">
+              <div>"Go Ahead"</div>
+              <div>«Go Ahead»</div>
+              <div>Goahead</div>
+            </div>
+            <div class="card-bottom__right text-second ">
+              <div>goAhead</div>
+              <div>GOAHEAD</div>
+              <div>GoAhead</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>

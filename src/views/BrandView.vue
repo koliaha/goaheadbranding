@@ -44,12 +44,12 @@
   <section class="brand-sec brand-forth">
     <div class="container">
       <h1 class="text-title">Наша миссия</h1>
-      <p class="text-prime mb-40 brand-forth__text">Помогать компаниям достигать своих целей и делать это лучше всех.</p>
+      <p class="text-prime mb-40 brand-forth__text title__text">Помогать компаниям достигать своих целей и делать это лучше всех.</p>
       <h1 class="text-title">Наши ценности</h1>
-      <p class="text-prime mb-40 brand-forth__text">Структура группы Go Ahead отражает наши ценности — свободу и развитие. Люди, которые
+      <p class="text-prime mb-40 brand-forth__text title__text">Структура группы Go Ahead отражает наши ценности — свободу и развитие. Люди, которые
         приходят в компанию наемными сотрудниками, растят в ней свои направления, выделяют их в отдельные компании и
         получают долю бизнеса.</p>
-      <p class="text-prime mb-40 brand-forth__text">Основной принцип компании — человек должен заниматься тем, что он любит. Поэтому мы
+      <p class="text-prime mb-40 brand-forth__text title__text">Основной принцип компании — человек должен заниматься тем, что он любит. Поэтому мы
         всегда открыты к инициативам со стороны сотрудников — даже если это открытие нового офиса или юнита.</p>
       <div class="brand-sec-list">
         <div class="brand-sec-card" v-for="(i,index) in list_sec" :key="index">
