@@ -1,67 +1,98 @@
-@use './abstracts/colors' as colors;
+@use "./abstracts/colors" as colors;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
 }
 
 :root {
-    --document-font-family: 'Montserrat'
+  --document-font-family: "Montserrat";
 }
 
 button {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
-body { 
-    font-family: var(--document-font-family, 'Montserrat');
+body {
+  font-family: var(--document-font-family, "Montserrat");
 }
 
 text {
-    font-family: var(--document-font-family, 'Montserrat');
+  font-family: var(--document-font-family, "Montserrat");
 }
 
 svg {
-    font-family: var(--document-font-family, 'Montserrat');
+  font-family: var(--document-font-family, "Montserrat");
+}
+.robo {
+  font-family: "Robtronika";
 }
 
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: colors.$orange;
-    transition: color .3s ease;
-    &:hover {
-        font-size: colors.$pale-orange;
-    }
-}
-
-
-
-p {
-    color: colors.$dark-gray;
-    font-weight: 100;
-    line-height: 130%;
+  text-decoration: none;
+  color: colors.$orange;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+    font-size: colors.$pale-orange;
+  }
 }
 
 li {
-    color: colors.$dark-gray;
-    font-weight: 100;
+  color: colors.$dark-gray;
+  font-weight: 100;
 }
-
-
-
+section {
+  background-color: colors.$light-gray;
+}
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
-.container{
-    max-width: 1241px;
-    width: 100%;
-    margin: 0 auto;
+.container {
+  max-width: 1241px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-prime {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.text-second {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff7323;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff863f;
 }

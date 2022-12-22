@@ -5,10 +5,11 @@
                 <img src="@/assets/img/logo.svg" alt="logo" class="header-content__img">
                 <div class="header-content__logo-title"><span>go</span>ahead</div>
             </div>
-            <div class="header-content__title">Бр<span class="robo">Е</span>нд</div>
+            <div class="header-content__title">Конт<span class="robo">Е</span>нт</div>
             <div class="header-content__subtitle text-second">
-                <div class="header-content__subtitle-item">Наша миссия</div>
-                <div class="header-content__subtitle-item">Наши ценности</div>
+                <div class="header-content__subtitle-item">Tone of voice</div>
+                <div class="header-content__subtitle-item">Аудитория</div>
+                <div class="header-content__subtitle-item">Написание юнитов</div>
             </div>
         </div>
     </header>

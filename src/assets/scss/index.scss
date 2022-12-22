@@ -1,3 +1,5 @@
+@use './abstracts/' as *;
+
 // Animaions
 @import './animations.scss';
 
@@ -7,3 +9,7 @@
 // Typography
 @import './typography';
 
+// header
+
+@import './header.scss';
+@import './nav.scss';
