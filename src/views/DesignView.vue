@@ -9,12 +9,13 @@
   </section>
   <section class="design-third">
     <div class="container">
-      3
+      <DesignUnits/>
     </div>
+    
   </section>
   <section class="design-forth">
     <div class="container">
-      4
+      <DesignColorList/>
     </div>
   </section>
 </template>
@@ -23,11 +24,13 @@
 // @ is an alias to /src
 import DesignHeader from '@/components/DesignHeader.vue'
 import DesignLogo from '@/components/design/DesignLogo.vue'
+import DesignUnits from '@/components/design/DesignUnits.vue'
+import DesignColorList from '@/components/design/DesignColorList.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    DesignHeader,DesignLogo
+    DesignHeader,DesignLogo,DesignUnits,DesignColorList
   }
 }
 </script>

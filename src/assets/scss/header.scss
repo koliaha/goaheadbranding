@@ -7,15 +7,18 @@
     url("@/assets/img/bg.jpg"), #161616;
   width: 100%;
   max-width: 100vw;
-  height: 100vh;
   position: relative;
   color: $white;
+  @include flex(column, center, center);
+  padding:116px 0 128px;
+
 }
 .header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  max-width:896px;
   &__logo {
     @include flex(column, center, center);
     img {
