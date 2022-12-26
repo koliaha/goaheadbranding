@@ -1,13 +1,16 @@
 .design-second {
   padding: 100px 0 160px;
 }
-.design-third {
+.design-third,.design-forth,.design-fifth,.design-sixth,.design-seventh,.design-eight,.design-ninth,.design-tenth,.design-eleven {
   padding: 120px 0 160px;
+}
+.design-third {
   background: $light-black;
 }
 .design-third__title {
   color: $white;
 }
-.design-forth {
-  padding: 120px 0 160px;
+
+.design-fifth,.design-seventh,.design-ninth,.design-eleven {
+  background: $white;
 }

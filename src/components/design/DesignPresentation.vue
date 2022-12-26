@@ -1,0 +1,23 @@
+<template>
+    <div class="container">
+      <h1 class="text-title">Презентация</h1>
+      <p class="text-prime  title__text design-logo-wrapper">Презентация — важный инструмент визуального общения с клиентами, поэтому все ее компоненты должны легко восприниматься. Основа построения наших слайдов — блочная композиционная система.</p>
+      
+      <h3 class="text-prime mb-40 text-center"><b>Примеры использования паттернов</b></h3>
+    </div>
+    <TheSwiper :list-image="[41, 42, 3]"/>
+    <div class="container">
+      <div class="design-color-link">
+        <a href="https://disk.yandex.ru/d/FqrDypOnNwqrGw"
+          target="_blank" class="btn text-prime">Примеры использования паттернов</a>
+      </div>
+    </div>
+  </template>
+  <script>
+  import TheSwiper from '@/components/TheSwiper.vue'
+  export default {
+    components: {
+      TheSwiper
+    }
+  }
+  </script>

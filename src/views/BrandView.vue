@@ -135,7 +135,7 @@ export default {
   },
   methods: {
     getImgUrl(id) {
-      var images = require.context('@/assets/img/logos/', false, /\.svg$/)
+      const images = require.context('@/assets/img/logos/', false, /\.svg$/)
       return images('./' + id + ".svg")
     }
   },
