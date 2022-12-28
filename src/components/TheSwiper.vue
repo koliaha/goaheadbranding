@@ -1,5 +1,5 @@
 <template>
-    <swiper :slidesPerView="2" :spaceBetween="30" :centeredSlides="true" :pagination="{
+    <swiper :slidesPerView="2" :spaceBetween="15" :centeredSlides="true" :pagination="{
     clickable: true,
 }" :modules="modules" class="mySwiper">
         <swiper-slide class="swiper-image" v-for="(i, index) in listImage" :key="index">
@@ -37,7 +37,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin:35px 0;
     img {
         display: block;
         height: 100%;

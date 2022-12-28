@@ -34,7 +34,8 @@ svg {
 }
 
 ul {
-  list-style: none;
+  padding-left: 30px;
+  max-width: 818px;
 }
 
 a {
@@ -48,8 +49,9 @@ a {
 }
 
 li {
-  color: colors.$dark-gray;
-  font-weight: 100;
+  color: colors.$black;
+  font-weight: 400;
+  margin: 15px;
 }
 section {
   background-color: colors.$light-gray;
@@ -107,9 +109,9 @@ section {
   border: 1px solid #000000;
   font-weight: 600;
   color:colors.$white;
-  max-width: 350px;
+  max-width: 355px;
   width: 100%;
-  padding: 32px 60px;
+  padding: 32px;
   text-align: center;
 }
 ::-webkit-scrollbar {

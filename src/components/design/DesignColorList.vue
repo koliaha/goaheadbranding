@@ -154,16 +154,7 @@ export default {
 
 .design-color {
     &-list-uses {
-        list-style: initial;
-        padding-left: 30px;
-        max-width: 818px;
         margin-bottom: 100px;
-
-        li {
-            color: $black;
-            font-weight: 400;
-            margin-bottom: 15px;
-        }
     }
 
     &-link {
