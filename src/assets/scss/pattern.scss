@@ -1,0 +1,36 @@
+.pattern {
+  &-section {
+    width: 100%;
+    padding: 50px 40px 80px;
+    background: $light-black;
+    border: 1px solid $black;
+    h3 {
+      font-weight: 600;
+      color: $white;
+      margin-bottom: 50px;
+    }
+  }
+  &-list {
+    @include flex(row, space-between, center);
+  }
+  &-item {
+    @include flex(column);
+    &__img {
+      margin: 13px 0;
+    }
+    &__left {
+      filter: brightness(0) invert(1);
+    }
+  }
+  &-second {
+    background: $bg-gray;
+    padding: 80px 40px;
+  }
+  &-third {
+    background: $white;
+    padding: 80px 40px;
+    .pattern-item__left{
+      filter: opacity(0.35);
+    }
+  }
+}

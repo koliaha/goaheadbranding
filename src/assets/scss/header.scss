@@ -10,15 +10,16 @@
   position: relative;
   color: $white;
   @include flex(column, center, center);
-  padding:116px 0 128px;
-
+  padding: 116px 0 128px;
+  position: relative;
 }
+
 .header-content {
   // position: absolute;
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%);
-  max-width:896px;
+  max-width: 896px;
   &__logo {
     @include flex(column, center, center);
     img {
@@ -43,8 +44,8 @@
     text-align: center;
     margin-top: 48px;
     span {
-        font-size: 67.3305px;
-        line-height: 77px;
+      font-size: 67.3305px;
+      line-height: 77px;
       background: linear-gradient(90deg, $white 39.31%, $orange 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

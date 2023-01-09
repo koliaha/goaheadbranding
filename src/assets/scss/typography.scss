@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 16px;
 }
@@ -29,6 +30,7 @@ text {
 svg {
   font-family: var(--document-font-family, "Montserrat");
 }
+
 .robo {
   font-family: "Robtronika";
 }
@@ -42,6 +44,7 @@ a {
   text-decoration: none;
   color: colors.$orange;
   transition: opacity 0.3s ease;
+
   &:hover {
     opacity: 0.8;
     font-size: colors.$pale-orange;
@@ -53,9 +56,11 @@ li {
   font-weight: 400;
   margin: 15px;
 }
+
 section {
   background-color: colors.$light-gray;
 }
+
 .hidden {
   display: none !important;
 }
@@ -65,55 +70,86 @@ section {
   width: 100%;
   margin: 0 auto;
 }
+
 .text-title {
   font-weight: 600;
   font-size: 50px;
   line-height: 61px;
 }
+
 .text-prime {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
 }
+
 .text-second {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
+
 .text-center {
   text-align: center;
 }
-.title__text{
-  margin-top:28px;
+
+.title__text {
+  margin-top: 28px;
 }
+
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
-.mt-120{
+
+.mt-120 {
   margin-top: 120px;
 }
+
+.mx-30 {
+  margin: 0 30px;
+}
+
 .flex-end {
   align-self: flex-end;
 }
-.line{
-  background:colors.$black;
+
+.line {
+  background: colors.$black;
   width: 100%;
   height: 1px;
-  &.line-dark{
-  background:colors.$white;
+
+  &.line-dark {
+    background: colors.$white;
   }
 }
+
 .btn {
+  font-size: 24px;
+  line-height: 29px;
   display: block;
   background: linear-gradient(270deg, #ff7323 -88.02%, #000000 48.08%);
-  border: 1px solid #000000;
+  border: 1px solid colors.$black;
   font-weight: 600;
-  color:colors.$white;
+  color: colors.$white;
   max-width: 355px;
   width: 100%;
   padding: 32px;
   text-align: center;
+
+  &-wide {
+    max-width: 436px;
+  }
+
+  &-light {
+    background: linear-gradient(270deg, #ff7323 -122.45%, #ffffff 50.1%);
+    color: colors.$black;
+  }
 }
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -132,4 +168,47 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ff863f;
+}
+
+.brand-circle {
+  position: absolute;
+  z-index: 0;
+
+  &-first, &-third, &-eighth {
+    right: 0;
+    top: 0;
+  }
+
+  &-second, &-seventh, &-tenth {
+    left: 0;
+    bottom: 0;
+  }
+
+  &-forth {
+    left: 27%;
+    top: 50%;
+  }
+
+  &-fifth {
+    right: 245px;
+    bottom: 0;
+  }
+
+  &-sixth {
+    right: 0;
+    top: 30%;
+  }
+
+  &-tringle {
+    left: 0;
+  }
+
+  &-tringle2 {
+    right: 0;
+  }
+
+  &-ninth {
+    left: 10%;
+    top: 30%;
+  }
 }

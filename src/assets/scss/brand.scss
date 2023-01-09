@@ -69,6 +69,10 @@
   }
 }
 .brand-forth{
+  position: relative;
+  &-content{
+    z-index: 10;
+  }
   &__text{
     max-width:926px;
   }

@@ -93,8 +93,8 @@
         </div>
     </div>
     <div class="design-logo-buttons">
-        <button class="design-logo-button">Кнопка</button>
-        <button class="design-logo-button button-light">Кнопка</button>
+        <button class="design-logo-button btn">Кнопка</button>
+        <button class="design-logo-button btn btn-light">Кнопка</button>
     </div>
 </template>
 <style lang="scss">
@@ -232,24 +232,6 @@
         gap: 150px;
     }
 
-    &-button {
-        background: linear-gradient(270deg, #FF7323 -88.02%, #000000 48.08%);
-        border: 1px solid $black;
-        color: $white;
-        padding: 32px 60px;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        transition: 0.3s;
-
-        &:hover {
-            opacity: 0.9;
-        }
-        &.button-light{
-            background: linear-gradient(270deg, #FF7323 -122.45%, #FFFFFF 50.1%);
-        color: $black;
-        }
-    }
+  
 }
 </style>

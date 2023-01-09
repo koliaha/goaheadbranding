@@ -1,5 +1,12 @@
+<link rel="stylesheet" href="../assets/scss/typography.scss">
 <template>
     <header class="header header-brand">
+      <div class="brand-circle brand-circle-tringle">
+        <img class="brand-circle-img" src="@/assets/img/bg/tringle.svg" alt="">
+      </div>
+      <div class="brand-circle brand-circle-tringle2">
+        <img class="brand-circle-img" src="@/assets/img/bg/tringle2.svg" alt="">
+      </div>
         <div class="header-content">
             <div class="header-content__logo">
                 <img src="@/assets/img/logo.svg" alt="logo" class="header-content__img">

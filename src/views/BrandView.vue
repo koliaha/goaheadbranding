@@ -28,6 +28,15 @@
     </div>
   </section>
   <section class="brand-third">
+    <div class="brand-circle brand-circle-third">
+      <img class="brand-circle-img" src="@/assets/img/bg/circle3.svg" alt="">
+    </div>
+    <div class="brand-circle brand-circle-forth">
+      <img class="brand-circle-img" src="@/assets/img/bg/circle4.svg" alt="">
+    </div>
+    <div class="brand-circle brand-circle-fifth">
+      <img class="brand-circle-img" src="@/assets/img/bg/circle5.svg" alt="">
+    </div>
     <div class="container">
       <div class="brand-third__list">
         <div class="brand-third__item text-prime">Мы работаем на рынке мобильного маркетинга с 2016 года. За это время
@@ -42,17 +51,26 @@
     </div>
   </section>
   <section class="brand-sec brand-forth">
-    <div class="container">
+    <!-- <div class="brand-circle brand-circle-sixth">
+      <img class="brand-circle-img" src="@/assets/img/bg/circle6.svg" alt="">
+    </div>
+    <div class="brand-circle brand-circle-seventh">
+      <img class="brand-circle-img" src="@/assets/img/bg/circle7.svg" alt="">
+    </div> -->
+    <div class="container brand-forth-content">
       <h1 class="text-title">Наша миссия</h1>
-      <p class="text-prime mb-40 brand-forth__text title__text">Помогать компаниям достигать своих целей и делать это лучше всех.</p>
+      <p class="text-prime mb-40 brand-forth__text title__text">Помогать компаниям достигать своих целей и делать это
+        лучше всех.</p>
       <h1 class="text-title">Наши ценности</h1>
-      <p class="text-prime mb-40 brand-forth__text title__text">Структура группы Go Ahead отражает наши ценности — свободу и развитие. Люди, которые
+      <p class="text-prime mb-40 brand-forth__text title__text">Структура группы Go Ahead отражает наши ценности —
+        свободу и развитие. Люди, которые
         приходят в компанию наемными сотрудниками, растят в ней свои направления, выделяют их в отдельные компании и
         получают долю бизнеса.</p>
-      <p class="text-prime mb-40 brand-forth__text title__text">Основной принцип компании — человек должен заниматься тем, что он любит. Поэтому мы
+      <p class="text-prime mb-40 brand-forth__text title__text">Основной принцип компании — человек должен заниматься
+        тем, что он любит. Поэтому мы
         всегда открыты к инициативам со стороны сотрудников — даже если это открытие нового офиса или юнита.</p>
       <div class="brand-sec-list">
-        <div class="brand-sec-card" v-for="(i,index) in list_sec" :key="index">
+        <div class="brand-sec-card" v-for="(i, index) in list_sec" :key="index">
           <div class="brand-card__logo">
             <div class="brand-card__logo-title">{{ i.title }}</div>
           </div>
