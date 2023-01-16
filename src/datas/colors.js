@@ -338,3 +338,27 @@ export const color_main = [
     cmyk: "0 38 82 0",
   },
 ];
+export const color_back = [
+  {
+    name: "Dark background",
+    hex: "262626",
+    cmyk: "0 0 0 90",
+  },
+  {
+    name: "Light background",
+    hex: "E4E4E4",
+    cmyk: "0 0 0 15",
+  },
+];
+export const color_back_mini = [
+  {
+    name: "Basic white",
+    hex: "FFFFFF",
+    cmyk: "0 0 0 0",
+  },
+  {
+    name: "Basic black",
+    hex: "000000",
+    cmyk: "0 0 0 100",
+  },
+];

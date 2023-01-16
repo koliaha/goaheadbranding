@@ -122,7 +122,9 @@ export default {
         &-wide {
             max-width: 102px;
         }
-        
+        &-border{
+            border: 1px solid $black;
+        }
     }
 
     &__box {
@@ -161,27 +163,33 @@ export default {
         @include flex(row, center, center);
     }
 }
-.color-main-list{
-    @include flex(row,start);
+
+.color-main-list {
+    @include flex(row, start);
     margin-bottom: 100px;
     gap: 67px;
 }
-.color-main-left{
+
+.color-main-left {
     max-width: 247px;
     width: 100%;
-  .color-item__item{
-    max-width: 100%;
-    width: 100%;
-    .color-item__box{
-        height: 150px;
+
+    .color-item__item {
+        max-width: 100%;
+        width: 100%;
+
+        .color-item__box {
+            height: 150px;
+        }
+
+        .color-item__title {
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
-    .color-item__title{
-        font-size: 24px;
-  line-height: 29px;
-    }
-  }  
 }
-.color-main-right{
+
+.color-main-right {
     gap: 16px;
     width: 100%;
 }

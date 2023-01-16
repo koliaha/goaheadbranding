@@ -24,7 +24,7 @@
   }
   &-cards {
     @include flex(row, space-between, stretch);
-    gap:16px;
+    gap: 16px;
   }
   &-card {
     max-width: 612px;
@@ -32,13 +32,12 @@
     background: $white;
     border: 1px solid $black;
     padding: 28px;
-    &.card-dark{
-      background:$light-black;
-    border: 1px solid $white;
-    color:$white;
+    &.card-dark {
+      background: $light-black;
+      border: 1px solid $white;
+      color: $white;
+    }
   }
-  }
- 
 }
 .content-card__title {
   margin-bottom: 28px;
@@ -46,30 +45,33 @@
 .content-card__subtitle {
   margin-bottom: 30px;
 }
+.card-top {
+  min-height: 285px;
+}
 .card-bottom {
   margin-top: 45px;
-  @include flex(row, center, center);
+  @include flex(row, center, start);
   flex-wrap: wrap;
   gap: 16px;
   &__item {
     max-width: 280px;
     width: 100%;
   }
-  &__item-logo{
-  @include flex(column, center, center);
-
+  &__item-logo {
+    @include flex(column, center, center);
   }
   &__left,
-  &__right{
-    text-align: center;
-    div{
+  &__right {
+    div {
       margin-bottom: 16px;
       position: relative;
-      &::after{
-        content:'';
+    }
+    .line-through {
+      &::after {
+        content: "";
         position: absolute;
         width: 100%;
-        background:$red;
+        background: $red;
         height: 1px;
         top: 50%;
         left: 0;
