@@ -128,7 +128,12 @@ section {
     background: colors.$white;
   }
 }
-
+.blue-color{
+  color:colors.$main-blue !important
+}
+.white-color{
+  color:colors.$white !important
+}
 .btn {
   font-size: 24px;
   line-height: 29px;

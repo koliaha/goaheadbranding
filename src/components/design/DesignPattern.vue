@@ -10,34 +10,53 @@
       <h3 class="text-prime">Контурные</h3>
       <div class="pattern-list">
         <div class="pattern-item pattern-item__left">
-          <PatternItem/>
+          <PatternItem />
         </div>
         <div class="pattern-item">
-          <PatternItem/>
+          <PatternItem />
         </div>
       </div>
     </div>
     <div class="pattern-section pattern-second">
       <div class="pattern-list">
         <div class="pattern-item pattern-item__left">
-          <PatternItem/>
+          <PatternItem />
         </div>
         <div class="pattern-item">
-          <PatternItem/>
+          <PatternItem />
         </div>
       </div>
     </div>
     <div class="pattern-section pattern-third">
       <div class="pattern-list">
         <div class="pattern-item pattern-item__left">
-          <PatternItem/>
+          <PatternItem />
         </div>
         <div class="pattern-item">
-          <PatternItem/>
+          <PatternItem />
         </div>
       </div>
     </div>
-    <h3 class="text-prime mb-40 text-center"><b>Примеры использования паттернов</b></h3>
+    <p class="text-prime  title__text design-logo-wrapper mt-120">Можно набирать эти знаки на клавиатуре.
+    </p>
+    <div class="pattern-section pattern-forth">
+      <div class="pattern-list">
+        <div class="pattern-item">
+          <img src="@/assets/img/patterns/3.svg" alt="patterns" class="pattern-item__img">
+          <img src="@/assets/img/patterns/4.svg" alt="patterns" class="pattern-item__img">
+          <img src="@/assets/img/patterns/5.svg" alt="patterns" class="pattern-item__img">
+        </div>
+        <div class="pattern-item">
+          <img src="@/assets/img/patterns/6.svg" alt="patterns" class="pattern-item__img">
+          <img src="@/assets/img/patterns/7.svg" alt="patterns" class="pattern-item__img">
+        </div>
+      </div>
+    </div>
+    <div class="pattern-gradient mt-120">
+      <img class="pattern-gradient__img" src="@/assets/img/slides/81.png" alt="">
+      <img class="pattern-gradient__img" src="@/assets/img/slides/82.png" alt="">
+    </div>
+    <h3 class="text-prime mb-40 text-center mt-120"><b>Примеры использования паттернов</b></h3>
   </div>
   <TheSwiper :list-image="[31, 32, 33, 34, 35]" />
   <div class="container">
@@ -54,7 +73,7 @@ import TheSwiper from '@/components/TheSwiper.vue'
 import PatternItem from '@/components/design/PatternItem.vue'
 export default {
   components: {
-    TheSwiper,PatternItem
+    TheSwiper, PatternItem
   }
 }
 </script>

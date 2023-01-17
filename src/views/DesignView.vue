@@ -38,6 +38,9 @@
   <section class="design-eleven">
       <DesignImidge />
   </section>
+  <section class="design-tenth">
+      <DesignMerch />
+  </section>
 </template>
 
 <script>
@@ -53,11 +56,12 @@ import DesignPresentation from '@/components/design/DesignPresentation.vue'
 import DesignSmm from '@/components/design/DesignSmm.vue'
 import DesignBanners from '@/components/design/DesignBanners.vue'
 import DesignImidge from '@/components/design/DesignImidge.vue'
+import DesignMerch from '@/components/design/DesignMerch.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    DesignHeader, DesignLogo, DesignUnits, DesignColorList, DesignBack,DesignTypograph,DesignPattern,DesignPresentation,DesignSmm,DesignBanners,DesignImidge
+    DesignHeader, DesignLogo, DesignUnits, DesignColorList, DesignBack,DesignTypograph,DesignPattern,DesignPresentation,DesignSmm,DesignBanners,DesignImidge,DesignMerch
   }
 }
 </script>

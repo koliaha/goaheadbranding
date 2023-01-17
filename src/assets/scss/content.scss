@@ -26,6 +26,9 @@
     @include flex(row, space-between, stretch);
     gap: 16px;
   }
+  &-cards__wide{
+    flex-wrap: wrap;
+  }
   &-card {
     max-width: 612px;
     width: 100%;
@@ -38,6 +41,7 @@
       color: $white;
     }
   }
+  
 }
 .content-card__title {
   margin-bottom: 28px;
@@ -56,6 +60,9 @@
   &__item {
     max-width: 280px;
     width: 100%;
+    &-slim{
+      max-width: 230px;
+    }
   }
   &__item-logo {
     @include flex(column, center, center);

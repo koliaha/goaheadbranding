@@ -11,7 +11,7 @@
     }
   }
   &-list {
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, start);
   }
   &-item {
     @include flex(column);
@@ -26,11 +26,21 @@
     background: $bg-gray;
     padding: 80px 40px;
   }
+  &-forth {
+    background: $bg-gray;
+    padding: 30px 40px;
+  }
   &-third {
     background: $white;
     padding: 80px 40px;
     .pattern-item__left{
       filter: opacity(0.35);
+    }
+  }
+  &-gradient{
+    @include flex(row);
+    &__img{
+      max-width: 620px;
     }
   }
 }
