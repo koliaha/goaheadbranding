@@ -58,12 +58,12 @@
     </div>
     <h3 class="text-prime mb-40 text-center mt-120"><b>Примеры использования паттернов</b></h3>
   </div>
-  <TheSwiper :list-image="[31, 32, 33, 34, 35]" />
+  <TheSwiper :list-image="[31, 32, 33, 34, 35]" :is-wide="[2,3]"/>
   <div class="container">
     <div class="design-color-link mt-120">
       <a href="https://disk.yandex.ru/d/-FV-PZdrBf_ANw" target="_blank" class="btn text-prime mx-30 btn-wide">Скачать
         паттерны в PNG</a>
-      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=q6YR4gsn4ay4D8h2-0" target="_blank"
+      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=347%3A3060&t=PldttM6vnm9S9sys-0" target="_blank"
         class="btn btn-light text-prime mx-30">Гайд по паттернам</a>
     </div>
   </div>

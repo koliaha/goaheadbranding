@@ -5,7 +5,7 @@
       наборным, чтобы текст привлекал внимание.</p>
     <h3 class="text-prime mb-40 text-center"><b>Примеры применения типографики</b></h3>
   </div>
-  <TheSwiper :list-image="[11, 12, 13, 14]" />
+  <TheSwiper :list-image="[11, 12, 13, 14]" :is-wide="[1,3]"/>
   <div class="container">
     <div class="font-wrapper">
       <h2 class="text-center mt-120 mb-40 robo text-title">Robtronika</h2>

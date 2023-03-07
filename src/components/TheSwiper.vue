@@ -1,7 +1,15 @@
 <template>
     <div class="swiper-custom">
-        <swiper :slidesPerView="slidePerpage || 3" :spaceBetween="15" :loop="true" :navigation="true" :modules="modules" class="mySwiper">
-            <swiper-slide class="swiper-image" v-for="(i, index) in listImage" :key="index">
+        <swiper :slidesPerView="slidePerpage || 3" :spaceBetween="25" :navigation="true" :modules="modules" loop="true"
+        :breakpoints="{
+              768: {
+                slidesPerView: 2,
+              },
+              1070: {
+                slidesPerView: `${slidePerpage || 3}`,
+              },
+            }" class="mySwiper">
+            <swiper-slide class="swiper-image" v-for="(i, index) in listImage" :key="index" :class="[isWide?.includes(index) && 'wide'] || ''">
                 <img :src="getImgUrl(i)" alt="slides">
             </swiper-slide>
         </swiper>
@@ -18,7 +26,7 @@ export default {
         Swiper,
         SwiperSlide,
     },
-    props: ["listImage", "slidePerpage"],
+    props: ["listImage", "slidePerpage","isWide"],
     setup() {
         const getImgUrl = (id) => {
             const images = require.context('@/assets/img/slides/', false, /\.jpg$/)
@@ -38,14 +46,16 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 35px 0;
-
+    margin: 35px 0 !important;
     img {
         display: block;
         height: 100%;
     }
 }
-
+.swiper-image.wide {
+    max-width: 725px !important;
+    width: 100% !important;
+}
 .swiper-custom {
     .swiper{
         padding-bottom: 40px;

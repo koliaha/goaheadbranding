@@ -2,43 +2,43 @@
   <section class="design-first">
     <DesignHeader />
   </section>
-  <section class="design-second">
+  <section class="design-second" id="logo">
     <div class="container">
       <DesignLogo />
     </div>
   </section>
-  <section class="design-third">
+  <section class="design-third" id="unit">
     <div class="container">
       <DesignUnits />
     </div>
   </section>
-  <section class="design-forth">
+  <section class="design-forth" id="color">
     <div class="container">
       <DesignColorList />
     </div>
   </section>
-  <section class="design-fifth">
+  <section class="design-fifth" id="bg">
       <DesignBack />
   </section>
-  <section class="design-sixth">
+  <section class="design-sixth" id="type">
       <DesignTypograph />
   </section>
-  <section class="design-seventh">
+  <section class="design-seventh" id="pattern">
       <DesignPattern />
   </section>
-  <section class="design-eight">
+  <section class="design-eight" id="presentations">
       <DesignPresentation />
   </section>
-  <section class="design-ninth">
+  <section class="design-ninth" id="smm">
       <DesignSmm />
   </section>
-  <section class="design-tenth">
+  <section class="design-tenth" id="banners">
       <DesignBanners />
   </section>
-  <section class="design-eleven">
+  <section class="design-eleven" id="imidge"> 
       <DesignImidge />
   </section>
-  <section class="design-tenth">
+  <section class="design-tenth" id="merch">
       <DesignMerch />
   </section>
 </template>

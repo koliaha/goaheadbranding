@@ -17,7 +17,7 @@
   <TheSwiper :list-image="[51, 52, 53,54,55]"/>
   <div class="container">
     <p class="text-prime  title__text mt-120 mb-40">Подробнее читайте в гайде по SMM </p>
-      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=636%3A2184&t=lXHVzUJeuQw3y50q-0"
+      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=636%3A2184"
         target="_blank" class="btn text-prime ">Гайд по SMM</a>
   </div>
 </template>

@@ -16,5 +16,61 @@
     &.active{
       color:$orange;
     }
+    &-arrow{
+  @include flex(row, start, center);
+  gap: 10px;
+    }
   }
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown-list {
+  padding: 30px;
+  background: linear-gradient(
+      0deg,
+      rgba(79, 79, 79, 0.2),
+      rgba(79, 79, 79, 0.2)
+    ),
+    #161616;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  gap: 15px 30px;
+  height: 200px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+}
+.dropdown-list a{
+  cursor: pointer;
+}
+.dropdown-list.dsp {
+  width: 870px;
+}
+.dropdown-content a {
+  color: #f1f1f1;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+.dropdown-content a:hover,
+.burger-list a:hover {
+  background-color: $orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
