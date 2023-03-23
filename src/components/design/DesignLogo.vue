@@ -6,49 +6,48 @@
     <h3 class="text-prime text-center"><b>Приоритетный вариант лого — цветной вертикальный</b></h3>
     <div class="design-logo--first-list">
         <div class="design-logo--first-item dark">
-            <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
             <div class="first-item__logo-title"><span>go</span>ahead</div>
         </div>
         <div class="design-logo--first-item ">
-            <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
             <div class="first-item__logo-title"><span>go</span>ahead</div>
         </div>
     </div>
     <h3 class="text-prime text-center"><b>Горизонтальная и черно-белая версии логотипа — второстепенные</b></h3>
     <div class="design-logo--second-list">
-        <div class="design-logo--second-item second-item__row">
+        
+        
+        <div class="design-logo--first-item ">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
+            <div class="first-item__logo-title">goahead</div>
+        </div>
+        <div class="design-logo--first-item dark">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
+            <div class="first-item__logo-title">goahead</div>
+        </div>
+        <div class="design-logo--second-item dark second-item__row mt-40">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img"> -->
+            <div class="second-item__logo-title second-item__logo-title-big"><span>go</span></div>
+        </div>
+        <div class="design-logo--second-item second-item__row mt-40">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img"> -->
+            <div class="second-item__logo-title second-item__logo-title-big">go</div>
+        </div>
+        
+        <div class="design-logo--second-item dark second-item__row mt-40">
+            <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img"> -->
+            <div class="second-item__logo-title second-item__logo-title-big">go</div>
+        </div>
+        <!-- <div class="design-logo--second-item second-item__row">
             <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title"><span>go</span>ahead</div>
         </div>
         <div class="design-logo--second-item dark second-item__row">
-            <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title"><span>go</span>ahead</div>
+            <img src="@/assets/img/logos/white.svg" alt="logo" class="second-item__img">
         </div>
         <div class="design-logo--second-item ">
             <img src="@/assets/img/logos/black.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title">goahead</div>
-        </div>
-        <div class="design-logo--second-item dark second-item__row">
-            <img src="@/assets/img/logos/white.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title">goahead</div>
-        </div>
-        <div class="design-logo--second-item  second-item__row">
-            <img src="@/assets/img/logos/black.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title">goahead</div>
-        </div>
-        <div class="design-logo--second-item dark">
-            <img src="@/assets/img/logos/white.svg" alt="logo" class="second-item__img">
-            <div class="second-item__logo-title">goahead</div>
-        </div>
-        <div class="design-logo--second-item second-item__row">
-            <img src="@/assets/img/logos/main.svg" alt="logo" class="second-item__img">
-        </div>
-        <div class="design-logo--second-item dark second-item__row">
-            <img src="@/assets/img/logos/white.svg" alt="logo" class="second-item__img">
-        </div>
-        <div class="design-logo--second-item ">
-            <img src="@/assets/img/logos/black.svg" alt="logo" class="second-item__img">
-        </div>
+        </div> -->
     </div>
     <h3 class="text-prime mb-40"><b>Правила использования</b></h3>
     <div class="design-logo-rules">
@@ -93,8 +92,8 @@
         </div>
     </div>
     <div class="design-logo-buttons">
-        <button class="design-logo-button btn">Кнопка</button>
-        <button class="design-logo-button btn btn-light">Кнопка</button>
+        <button class="btn design-logo-buttons-item ">Логотипы на Яндекс.Диске</button>
+        <button class="btn btn-light  ">Логотипы в фигме</button>
     </div>
 </template>
 <style lang="scss">
@@ -129,7 +128,9 @@
         color: $white;
     }
 }
-
+// .design-logo--first-item{
+//     margin-bottom: ;
+// }
 .first-item,
 .second-item {
     &__img {
@@ -166,10 +167,15 @@
     &__logo-title {
         font-size: 28.9982px;
         line-height: 35px;
+        &-big{
+        line-height: 75px;
+            font-size: 70px;
+        }
     }
 }
 
 .design-logo {
+    
     &-rules {
         @include flex(row, space-between, center);
     }
@@ -230,6 +236,9 @@
         margin-top: 140px;
         @include flex(row, center, center);
         gap: 150px;
+        &-item{
+        max-width: 475px
+    }
     }
 
   

@@ -1,11 +1,14 @@
 <template>
   <div class="container">
-    <h1 class="text-title">Презентация</h1>
-    <p class="text-prime  title__text design-logo-wrapper">Презентация — важный инструмент визуального общения с
+    <div class="content-title-wrapper">
+      <h1 class="text-title">Презентация</h1>
+        <div class="bg-circle circle-content circle-present-fist"></div>
+      </div>
+    <p class="text-prime  title__text design-present-wrapper">Презентация — важный инструмент визуального общения с
       клиентами, поэтому все ее компоненты должны легко восприниматься. Основа построения наших слайдов — блочная
       композиционная система.</p>
 
-    <h3 class="text-prime mb-40 text-center"><b>Примеры использования паттернов</b></h3>
+    <h3 class="text-prime mb-40 mt-120 text-center"><b>Примеры использования паттернов</b></h3>
   </div>
   <TheSwiper :list-image="[41, 42, 3]" :is-wide="[0,1,2]" :slide-perpage="2"/>
   <div class="container">

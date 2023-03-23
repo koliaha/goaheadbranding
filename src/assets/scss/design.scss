@@ -11,6 +11,7 @@
 .design-tenth,
 .design-eleven {
   padding: 120px 0 160px;
+  overflow-x: hidden;
 }
 .design-third {
   background: $light-black;
@@ -24,4 +25,7 @@
 .design-ninth,
 .design-eleven {
   background: $white;
+}
+.design-present-wrapper{
+  max-width: 737px;
 }

@@ -23,7 +23,7 @@
               <a @click="scrollto('pattern')">Паттерны</a>
               <a @click="scrollto('presentations')">Презентация</a>
               <a @click="scrollto('smm')">SMM</a>
-              <a @click="scrollto('banners')">Баннеры</a>
+              <a @click="scrollto('ban')">Баннеры</a>
               <a @click="scrollto('imidge')">Имиджи</a>
               <a @click="scrollto('merch')">Мерч и наружная реклама</a>
             </div>

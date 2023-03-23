@@ -7,14 +7,15 @@
     gap: 100px;
   }
   &-logo {
-    @include flex(column, center, center);
+    @include flex(column, start, start);
     &__img {
       max-width: 60px;
     }
     &__title {
-      font-size: 19.278px;
+      font-size: 33.278px;
       line-height: 23px;
       margin-top: 5px;
+      margin-bottom: 48px;
     }
   }
   &-text {

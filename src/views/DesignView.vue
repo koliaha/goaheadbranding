@@ -32,8 +32,8 @@
   <section class="design-ninth" id="smm">
       <DesignSmm />
   </section>
-  <section class="design-tenth" id="banners">
-      <DesignBanners />
+  <section class="design-tenth" id="ban">
+      <DesignBan />
   </section>
   <section class="design-eleven" id="imidge"> 
       <DesignImidge />
@@ -54,14 +54,14 @@ import DesignTypograph from '@/components/design/DesignTypograph.vue'
 import DesignPattern from '@/components/design/DesignPattern.vue'
 import DesignPresentation from '@/components/design/DesignPresentation.vue'
 import DesignSmm from '@/components/design/DesignSmm.vue'
-import DesignBanners from '@/components/design/DesignBanners.vue'
+import DesignBan from '@/components/design/DesignBan.vue'
 import DesignImidge from '@/components/design/DesignImidge.vue'
 import DesignMerch from '@/components/design/DesignMerch.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    DesignHeader, DesignLogo, DesignUnits, DesignColorList, DesignBack,DesignTypograph,DesignPattern,DesignPresentation,DesignSmm,DesignBanners,DesignImidge,DesignMerch
+    DesignHeader, DesignLogo, DesignUnits, DesignColorList, DesignBack,DesignTypograph,DesignPattern,DesignPresentation,DesignSmm,DesignBan,DesignImidge,DesignMerch
   }
 }
 </script>

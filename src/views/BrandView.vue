@@ -7,9 +7,9 @@
       <p class="text-prime mb-40">Go Ahead — экосистема сервисов и технологий digital-маркетинга. <br />
         Группа компаний включает в себя:</p>
       <div class="brand-sec-list ">
-        <div class="brand-sec-card" v-for="i in list" :key="i.id">
+        <div class="brand-sec-card brand-card-item" v-for="i in list" :key="i.id">
           <div class="brand-card__logo">
-            <img :src="getImgUrl(i.id)" alt="logo" class="brand-card__logo-img">
+            <!-- <img :src="getImgUrl(i.id)" alt="logo" class="brand-card__logo-img"> -->
             <div class="brand-card__logo-title"><span :style="{ color: i.logo }">go</span>{{ i.title }}</div>
           </div>
           <p class="brand-sec-card__title text-second text-center">
@@ -58,10 +58,10 @@
       <img class="brand-circle-img" src="@/assets/img/bg/circle7.svg" alt="">
     </div> -->
     <div class="container brand-forth-content">
-      <h1 class="text-title">Наша миссия</h1>
+      <h1 class="text-title" id="mission">Наша миссия</h1>
       <p class="text-prime mb-40 brand-forth__text title__text">Помогать компаниям достигать своих целей и делать это
         лучше всех.</p>
-      <h1 class="text-title">Наши ценности</h1>
+      <h1 class="text-title"  id="price">Наши ценности</h1>
       <p class="text-prime mb-40 brand-forth__text title__text">Структура группы Go Ahead отражает наши ценности —
         свободу и развитие. Люди, которые
         приходят в компанию наемными сотрудниками, растят в ней свои направления, выделяют их в отдельные компании и
@@ -70,6 +70,8 @@
         тем, что он любит. Поэтому мы
         всегда открыты к инициативам со стороны сотрудников — даже если это открытие нового офиса или юнита.</p>
       <div class="brand-sec-list">
+        <div class="bg-circle circle-brand circle-brand-fist" ></div>
+        <div class="bg-circle circle-brand circle-brand-second" ></div>
         <div class="brand-sec-card" v-for="(i, index) in list_sec" :key="index">
           <div class="brand-card__logo">
             <div class="brand-card__logo-title">{{ i.title }}</div>

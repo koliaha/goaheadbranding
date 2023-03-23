@@ -1,5 +1,6 @@
 .content-main {
   padding: 100px 0 160px;
+  overflow: hidden;
   &-list {
     @include flex(column);
     gap: 60px;
@@ -26,7 +27,7 @@
     @include flex(row, space-between, stretch);
     gap: 16px;
   }
-  &-cards__wide{
+  &-cards__wide {
     flex-wrap: wrap;
   }
   &-card {
@@ -41,7 +42,6 @@
       color: $white;
     }
   }
-  
 }
 .content-card__title {
   margin-bottom: 28px;
@@ -60,7 +60,7 @@
   &__item {
     max-width: 280px;
     width: 100%;
-    &-slim{
+    &-slim {
       max-width: 230px;
     }
   }

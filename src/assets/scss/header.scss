@@ -31,7 +31,7 @@
       font-size: 42px;
       line-height: 51px;
       text-align: center;
-      margin-top: 11px;
+      margin-top: 31px;
       span {
         color: $orange;
       }
@@ -58,5 +58,12 @@
     flex-wrap: wrap;
     gap: 60px;
     margin-top: 76px;
+    &-item{
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover{
+        color:$orange
+      }
+    }
   }
 }

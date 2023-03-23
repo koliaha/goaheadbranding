@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    <h1 class="text-title">SMM</h1>
+    <div class="content-title-wrapper">
+      <h1 class="text-title">SMM</h1>
+        <div class="bg-circle circle-content circle-smm-fist"></div>
+      </div>
+    
     <p class="text-prime  title__text design-smm-wrapper">Социальные сети — инструмент менее формального общения с аудиторией, поэтому здесь приветствуется бОльшая креативность и смелость.
     </p>
     <p class="text-prime  title__text design-smm-wrapper">Для оформления постов в инстаграм и другие соцсети можно использовать следующие техники:

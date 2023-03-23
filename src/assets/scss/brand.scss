@@ -2,12 +2,17 @@
 
 .brand-sec {
   padding: 100px 0;
-
+overflow: hidden;
   &-list {
     @include flex(row, center,stretch);
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 60px;
+    position: relative;
+    &__img{
+      position: absolute;
+      z-index: 1;
+    }
   }
 
   &-card {
@@ -18,10 +23,16 @@
     background: $white;
     @include flex(column, start, center);
     padding:54px 30px 40px;
+    z-index: 1;
   }
 
 }
-
+.brand-card-item{
+  min-height: 282px;
+  .brand-card__logo-title{
+    font-size: 43px;
+  }
+}
 .brand-card__logo {
   @include flex(column, center, center);
   margin-bottom: 30px;

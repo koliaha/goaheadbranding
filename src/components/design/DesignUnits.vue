@@ -6,17 +6,16 @@
       <p class="content-card__subtitle text-second">Название пишется слитно и с маленькой буквы — goahead, gonet,
         gomobile.</p>
       <p class="content-card__subtitle text-second"><br /></p>
-      <p class="content-card__subtitle text-second"><br /></p>
       <div class="line line-dark"></div>
       <div class="card-bottom card-logo-wrapper">
         <div class="card-bottom__item-logo card-bottom__item-logo ">
-          <img src="@/assets/img/logos/5.svg" alt="logo" class="second-item__img">
-          <div class="second-item__logo-title"><span class="blue-color">go</span>design</div>
+          <!-- <img src="@/assets/img/logos/5.svg" alt="logo" class="second-item__img"> -->
+          <div class="second-item__logo-title second-item__logo-title-big"><span class="blue-color">go</span>design</div>
         </div>
-        <div class="card-bottom__item-logo card-bottom__item-logo ">
+        <!-- <div class="card-bottom__item-logo card-bottom__item-logo ">
           <img src="@/assets/img/logos/1.svg" alt="logo" class="second-item__img">
           <div class="second-item__logo-title"><span class="main-color">go</span>mobile</div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="content-main-card card-dark">
