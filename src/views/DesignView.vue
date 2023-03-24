@@ -2,7 +2,7 @@
   <section class="design-first">
     <DesignHeader />
   </section>
-  <section class="design-second" id="logo">
+ <section class="design-second" id="logo">
     <div class="container">
       <DesignLogo />
     </div>
@@ -17,25 +17,25 @@
       <DesignColorList />
     </div>
   </section>
-  <section class="design-fifth" id="bg">
+   <section class="design-fifth" id="bg">
       <DesignBack />
   </section>
   <section class="design-sixth" id="type">
       <DesignTypograph />
   </section>
-  <section class="design-seventh" id="pattern">
+ <section class="design-seventh" id="pattern">
       <DesignPattern />
   </section>
   <section class="design-eight" id="presentations">
       <DesignPresentation />
   </section>
-  <section class="design-ninth" id="smm">
+   <section class="design-ninth" id="smm">
       <DesignSmm />
   </section>
   <section class="design-tenth" id="ban">
       <DesignBan />
   </section>
-  <section class="design-eleven" id="imidge"> 
+ <section class="design-eleven" id="imidge"> 
       <DesignImidge />
   </section>
   <section class="design-tenth" id="merch">
