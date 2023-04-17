@@ -16,7 +16,7 @@
   <div class="container">
     <p class="text-prime title__text mt-120 mb-40">Подробнее читайте в гайде поимиджам </p>
     <div class="design-imidge-link mt-120">
-      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=694%3A3576&t=lXHVzUJeuQw3y50q-0"
+      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=LNW5IEoAzuKefvvH-0"
         target="_blank" class="btn text-prime">Гайд по имиджам</a>
 
     </div>

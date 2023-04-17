@@ -55,7 +55,7 @@
         <li>Если говорим от лица юнита, то используем цвет юнита.</li>
     </ul>
     <div class="design-color-link">
-        <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=519%3A7525&t=G0949jWqQKWclkYe-0"
+        <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=519-7525&t=rg3F4jofo6ggK1vf-0"
             target="_blank" class="btn text-prime">Гайд по цветам</a>
     </div>
 </template>

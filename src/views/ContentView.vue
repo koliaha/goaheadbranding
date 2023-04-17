@@ -8,8 +8,8 @@
         <h1 class="text-title" id="tone">Tone of voice</h1>
         <div class="bg-circle circle-content circle-content-fist"></div>
       </div>
-      <p class="text-prime mb-40 title__text">У Go Ahead смешанный ToV.</p>
-      <div class="content-main-list">
+      <p class="text-prime mb-80 title__text">У Go Ahead смешанный ToV.</p>
+      <div class="content-main-list mt-80">
         <div class="content-main-item">
           <img
             src="@/assets/img/content/micro.png"

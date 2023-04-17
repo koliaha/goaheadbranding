@@ -180,7 +180,7 @@
       <img class="shop-item" src="@/assets/img/slides/22.jpg" alt="">
     </div>
     <div class="design-color-link mt-120">
-      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=347%3A3060&t=F3BR4ezQrdRiaQ4N-0" target="_blank" class="btn text-prime">Гайд по типографике</a>
+      <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=LtdRqYv0NeXV3vrq-0" target="_blank" class="btn text-prime">Гайд по типографике</a>
     </div>
   </div>
 </template>

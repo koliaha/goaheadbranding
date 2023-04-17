@@ -1,9 +1,9 @@
 <template>
     <h1 class="text-title">Логотип</h1>
-    <p class="text-prime  title__text design-logo-wrapper">В основе формообразующего элемента логотипа лежит
+    <p class="text-prime  title__text design-logo-wrapper " v-if="false">В основе формообразующего элемента логотипа лежит
         концепт про связь, единение, движение вперед, развитие. Лого напоминает кольца цепи, которые связывают все юниты
         воедино.</p>
-    <h3 class="text-prime text-center"><b>Приоритетный вариант лого — цветной вертикальный</b></h3>
+    <h3 class="text-prime text-center mt-40"><b>Приоритетный вариант лого — цветной вертикальный</b></h3>
     <div class="design-logo--first-list">
         <div class="design-logo--first-item dark">
             <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
@@ -92,8 +92,8 @@
         </div>
     </div>
     <div class="design-logo-buttons">
-        <button class="btn design-logo-buttons-item ">Логотипы на Яндекс.Диске</button>
-        <button class="btn btn-light  ">Логотипы в фигме</button>
+        <a href="https://disk.yandex.ru/d/TxA_T6o5lwQ07Q" target="_blank" class="btn design-logo-buttons-item ">Логотипы на Яндекс.Диске</a>
+        <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=347-659&t=tqAgZ2EkPhy9pZ7B-0" class="btn btn-light  " target="_blank">Логотипы в фигме</a>
     </div>
 </template>
 <style lang="scss">
@@ -111,7 +111,9 @@
     @include flex(row, center, stretch);
     flex-wrap: wrap;
 }
-
+.design-logo--second-list {
+    margin-bottom: 220px;
+}
 .design-logo--first-item,
 .design-logo--second-item {
     max-width: 514px;

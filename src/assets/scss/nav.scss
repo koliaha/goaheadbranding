@@ -62,13 +62,13 @@ line-height: 20px;
 }
 .dropdown-content a {
   color: #f1f1f1;
-  transition: 0.5s;
+  transition: 0.2s;
   padding: 5px;
 }
 
 .dropdown-content a:hover,
 .burger-list a:hover {
-  background-color: $orange;
+  color:$orange
 }
 
 .dropdown:hover .dropdown-content {

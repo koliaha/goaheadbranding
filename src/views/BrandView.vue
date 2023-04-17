@@ -61,7 +61,7 @@
       <h1 class="text-title" id="mission">Наша миссия</h1>
       <p class="text-prime mb-40 brand-forth__text title__text">Помогать компаниям достигать своих целей и делать это
         лучше всех.</p>
-      <h1 class="text-title"  id="price">Наши ценности</h1>
+      <h1 class="text-title mt-80"  id="price">Наши ценности</h1>
       <p class="text-prime mb-40 brand-forth__text title__text">Структура группы Go Ahead отражает наши ценности —
         свободу и развитие. Люди, которые
         приходят в компанию наемными сотрудниками, растят в ней свои направления, выделяют их в отдельные компании и
@@ -69,7 +69,7 @@
       <p class="text-prime mb-40 brand-forth__text title__text">Основной принцип компании — человек должен заниматься
         тем, что он любит. Поэтому мы
         всегда открыты к инициативам со стороны сотрудников — даже если это открытие нового офиса или юнита.</p>
-      <div class="brand-sec-list">
+      <div class="brand-sec-list mt-80">
         <div class="bg-circle circle-brand circle-brand-fist" ></div>
         <div class="bg-circle circle-brand circle-brand-second" ></div>
         <div class="brand-sec-card" v-for="(i, index) in list_sec" :key="index">

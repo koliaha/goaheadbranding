@@ -16,7 +16,7 @@
           <a
             href="https://t.me/choose_your_brief_bot"
             target="_blank"
-            class="btn text-prime"
+            class="btn btn-dark text-prime"
             >Поставить задачу</a
           >
         </div>

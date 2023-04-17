@@ -30,56 +30,57 @@
           </div>
         </div>
       </div>
-      <div class="color-item-list color-back-right">
-        <div
-          class="color-item__item"
-          v-for="(i, index) in colorList"
-          :key="index"
-        >
+      <div class="color-list_right">
+        <div class="color-item-list color-back-right">
           <div
-            class="color-item__box color-item__item-border"
-            :style="{ backgroundColor: `#${i.hex}` }"
-          ></div>
-          <div class="color-item__title">{{ i.name }}</div>
-          <div class="color-item__descriptions">
-            <p>
-              <b>RGB</b> <span>{{ roRgb(i.hex) || 0 }}</span>
-            </p>
-            <p>
-              <b>CMYK</b> <span>{{ i.cmyk || 0 }}</span>
-            </p>
-            <p>
-              <b>HEX</b> <span>{{ i.hex || 0 }}</span>
-            </p>
+            class="color-item__item"
+            v-for="(i, index) in colorList"
+            :key="index"
+          >
+            <div
+              class="color-item__box color-item__item-border"
+              :style="{ backgroundColor: `#${i.hex}` }"
+            ></div>
+            <div class="color-item__title">{{ i.name }}</div>
+            <div class="color-item__descriptions">
+              <p>
+                <b>RGB</b> <span>{{ roRgb(i.hex) || 0 }}</span>
+              </p>
+              <p>
+                <b>CMYK</b> <span>{{ i.cmyk || 0 }}</span>
+              </p>
+              <p>
+                <b>HEX</b> <span>{{ i.hex || 0 }}</span>
+              </p>
+            </div>
           </div>
         </div>
+        <p class="color-back-text">
+          Черный как фон используется только для проставления акцента.
+        </p>
       </div>
-      <p class="color-back-text">
-        Черный как фон используется только для проставления акцента.
-      </p>
     </div>
     <p class="text-prime title__text design-back-wrapper">
       В некоторых случаях мы используем легкий шум на фоне или градиент.
       Подробнее читайте в гайде по фонам.
     </p>
-    <h3 class="text-prime mb-40 mt-120 text-center">
-      <b>Примеры использования цвета фона</b>
-    </h3>
-  </div>
-  <TheSwiper :list-image="[1, 2, 3, 4]" :is-wide="[2]"/>
-  <div class="container">
-    <p class="text-prime mb-40 mt-120 title__text design-back-wrapper">
+    <p class="text-prime mb-40 mt-40 title__text design-back-wrapper">
       Подробнее читайте в гайде по фонам
     </p>
     <div class="design-imidge-link">
       <a
-        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?node-id=811%3A3185&t=nZNZK5PonXUOwDMj-0"
+        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=ODmRI6Rsdo1xZMLf-0"
         target="_blank"
         class="btn text-prime"
         >Гайд по фонам</a
       >
     </div>
+    <h3 class="text-prime mb-40 mt-120 text-center">
+      <b>Примеры использования цвета фона</b>
+    </h3>
   </div>
+
+  <TheSwiper :list-image="[1, 2, 3, 4]" :is-wide="[2]" />
 </template>
 <script>
 import TheSwiper from "@/components/TheSwiper.vue";
@@ -117,8 +118,9 @@ export default {
 }
 
 .color-back-list {
-  @include flex(row, space-between, start);
+  @include flex(row, start, start);
   margin-top: 60px;
+  gap: 110px;
   margin-bottom: 70px;
 }
 
@@ -153,5 +155,10 @@ export default {
 .color-back-text {
   max-width: 257px;
   width: 100%;
+}
+
+.color-list_right {
+  display: flex;
+  gap: 38px;
 }
 </style>

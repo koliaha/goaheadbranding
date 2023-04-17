@@ -106,7 +106,12 @@ section {
 .mb-40 {
   margin-bottom: 40px;
 }
-
+.mt-80{
+  margin-top: 80px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
 .mt-120 {
   margin-top: 120px;
 }
@@ -146,7 +151,9 @@ section {
   width: 100%;
   padding: 32px;
   text-align: center;
-
+  user-select: none;
+  cursor: pointer;
+  transition: 0.2s;
   &-wide {
     max-width: 436px;
   }
@@ -154,6 +161,17 @@ section {
   &-light {
     background: linear-gradient(270deg, #ff7323 -122.45%, #ffffff 50.1%);
     color: colors.$black;
+  }
+  &:hover {
+    color: colors.$black;
+    background: none;
+  }
+  &-dark {
+    &:hover {
+      color: colors.$white;
+      border: 1px solid colors.$white;
+      background: none;
+    }
   }
 }
 
@@ -246,31 +264,31 @@ section {
     height: 410.97px;
   }
 }
-.content-title-wrapper{
+.content-title-wrapper {
   position: relative;
 }
-.circle-content{
+.circle-content {
   background-image: url("@/assets/img/bg/linenew.svg");
   width: 100vw;
   height: 29px;
   left: 400px;
   top: 27px;
-  background-repeat:repeat-x
+  background-repeat: repeat-x;
 }
-.circle-audio-fist{
+.circle-audio-fist {
   background-image: url("@/assets/img/bg/slashnew.svg");
-height: 103px;
-left:900px;
+  height: 103px;
+  left: 900px;
 }
-.circle-present-fist{
+.circle-present-fist {
   background-image: url("@/assets/img/bg/fishes.svg");
-height: 151px;
-background-repeat:no-repeat;
-left: 800px;
+  height: 151px;
+  background-repeat: no-repeat;
+  left: 800px;
 }
-.circle-smm-fist{
+.circle-smm-fist {
   background-image: url("@/assets/img/bg/slash.svg");
-background-repeat:no-repeat;
-height: 460px;
-left: 900px;
+  background-repeat: no-repeat;
+  height: 460px;
+  left: 900px;
 }
