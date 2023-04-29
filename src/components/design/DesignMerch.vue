@@ -5,7 +5,7 @@
    
   </div>
   <TheSwiper
-      :list-image="[21, 22, 23]"
+      :list-image="items"
       :slide-perpage="3"
     />
 </template>
@@ -14,6 +14,15 @@ import TheSwiper from "@/components/TheSwiper.vue";
 export default {
   components: {
     TheSwiper,
+  },
+  data() {
+    return {
+      items: [
+        { content: 21, width: 401 },
+        { content: 22, width: 401 },
+        { content: 23, width: 401 },
+      ],
+    };
   },
 };
 </script>

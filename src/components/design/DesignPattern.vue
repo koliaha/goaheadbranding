@@ -58,7 +58,7 @@
     </div>
     <h3 class="text-prime mb-40 text-center mt-120"><b>Примеры использования паттернов</b></h3>
   </div>
-  <TheSwiper :list-image="[31, 32, 33, 34, 35]" :is-wide="[2,3]"/>
+  <TheSwiper :list-image="items"/>
   <div class="container">
     <div class="design-color-link mt-120">
       <a href="https://disk.yandex.ru/d/-FV-PZdrBf_ANw" target="_blank" class="btn text-prime mx-30 btn-wide">Скачать паттерны в PNG</a>
@@ -73,6 +73,17 @@ import PatternItem from '@/components/design/PatternItem.vue'
 export default {
   components: {
     TheSwiper, PatternItem
-  }
+  },
+  data() {
+    return {
+      items: [
+        { content: 31, width: 402 },
+        { content: 32, width: 402 },
+        { content: 33, width: 717 },
+        { content: 34, width: 649 },
+        { content: 35, width: 226 },
+      ],
+    };
+  },
 }
 </script>

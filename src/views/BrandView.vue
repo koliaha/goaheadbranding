@@ -1,5 +1,5 @@
 <template>
-  <section class="brand">
+  <section class="brand" id="brand">
     <BrandHeader />
   </section>
   <section class="brand-sec brand-second">
@@ -7,7 +7,7 @@
       <p class="text-prime mb-40">Go Ahead — экосистема сервисов и технологий digital-маркетинга. <br />
         Группа компаний включает в себя:</p>
       <div class="brand-sec-list ">
-        <div class="brand-sec-card brand-card-item" v-for="i in list" :key="i.id">
+        <div class="brand-sec-card brand-card-item brand-sec-card-logos" v-for="i in list" :key="i.id">
           <div class="brand-card__logo">
             <!-- <img :src="getImgUrl(i.id)" alt="logo" class="brand-card__logo-img"> -->
             <div class="brand-card__logo-title"><span :style="{ color: i.logo }">go</span>{{ i.title }}</div>
@@ -27,7 +27,7 @@
         Go :nnection и т д.</p>
     </div>
   </section>
-  <section class="brand-third">
+  <section class="brand-third"  id="mission">
     <div class="brand-circle brand-circle-third">
       <img class="brand-circle-img" src="@/assets/img/bg/circle3.svg" alt="">
     </div>
@@ -50,7 +50,7 @@
       </div>
     </div>
   </section>
-  <section class="brand-sec brand-forth">
+  <section class="brand-sec brand-forth"  id="target">
     <!-- <div class="brand-circle brand-circle-sixth">
       <img class="brand-circle-img" src="@/assets/img/bg/circle6.svg" alt="">
     </div>

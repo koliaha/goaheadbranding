@@ -1,9 +1,9 @@
 <template>
-    <h1 class="text-title">Логотип</h1>
+    <h1 class="text-title text-center">Логотип</h1>
     <p class="text-prime  title__text design-logo-wrapper " v-if="false">В основе формообразующего элемента логотипа лежит
         концепт про связь, единение, движение вперед, развитие. Лого напоминает кольца цепи, которые связывают все юниты
         воедино.</p>
-    <h3 class="text-prime text-center mt-40"><b>Приоритетный вариант лого — цветной вертикальный</b></h3>
+    <h3 class="text-prime text-center mt-80"><b>Приоритетный вариант лого — цветной вертикальный</b></h3>
     <div class="design-logo--first-list">
         <div class="design-logo--first-item dark">
             <!-- <img src="@/assets/img/logos/main.svg" alt="logo" class="first-item__img"> -->
@@ -57,7 +57,7 @@
         </div>
         <div class="design-logo-rule">
             <span class="rule-num">2</span>
-            <p class="rule-text text-second">Фон должен быть однородным, не пестрым</p>
+            <p class="rule-text text-second">Фон должен быть<br/>однородным, не пестрым</p>
         </div>
         <div class="design-logo-rule">
             <span class="rule-num">3</span>
@@ -172,18 +172,23 @@
         &-big{
         line-height: 75px;
             font-size: 70px;
+            margin-top: -15px;
         }
+    }
+    &-units{
+        line-height: 65px;
+        font-size: 60px;
     }
 }
 
 .design-logo {
     
     &-rules {
-        @include flex(row, space-between, center);
+        @include flex(row, space-between, start);
     }
 
     &-rule {
-        @include flex(row, space-between, center);
+        @include flex(row, start, start);
         max-width: 417px;
         width: 100%;
 
@@ -191,7 +196,7 @@
             font-family: 'Robtronika';
             font-weight: 400;
             font-size: 52px;
-            line-height: 60px;
+            line-height: 50px;
             margin-right: 15px;
         }
     }
@@ -237,7 +242,7 @@
     &-buttons {
         margin-top: 140px;
         @include flex(row, center, center);
-        gap: 150px;
+        gap: 60px;
         &-item{
         max-width: 475px
     }

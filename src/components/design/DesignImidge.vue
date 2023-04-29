@@ -12,7 +12,7 @@
     </p>
     <h3 class="text-prime mb-40 text-center"><b>Примеры имиджей</b></h3>
   </div>
-  <TheSwiper :list-image="[71, 72, 73, 74, 75, 76]" />
+  <TheSwiper :list-image="items" />
   <div class="container">
     <p class="text-prime title__text mt-120 mb-40">Подробнее читайте в гайде поимиджам </p>
     <div class="design-imidge-link mt-120">
@@ -27,7 +27,19 @@ import TheSwiper from '@/components/TheSwiper.vue'
 export default {
   components: {
     TheSwiper
-  }
+  },
+  data() {
+    return {
+      items: [
+        { content: 71, width: 402 },
+        { content: 72, width: 402 },
+        { content: 73, width: 402 },
+        { content: 74, width: 402 },
+        { content: 75, width: 402 },
+        { content: 76, width: 402 },
+      ],
+    };
+  },
 }
 </script>
 <style lang="scss">

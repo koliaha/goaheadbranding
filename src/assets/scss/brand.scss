@@ -1,15 +1,15 @@
-@use './abstracts' as *;
+@use "./abstracts" as *;
 
 .brand-sec {
   padding: 100px 0;
-overflow: hidden;
+  overflow: hidden;
   &-list {
-    @include flex(row, center,stretch);
+    @include flex(row, center, stretch);
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 60px;
     position: relative;
-    &__img{
+    &__img {
       position: absolute;
       z-index: 1;
     }
@@ -22,16 +22,19 @@ overflow: hidden;
     border: 1px solid $black;
     background: $white;
     @include flex(column, start, center);
-    padding:54px 30px 40px;
+    padding: 38px 30px 44px;
     z-index: 1;
   }
-
+  
 }
-.brand-card-item{
+.brand-card-item {
   min-height: 282px;
-  .brand-card__logo-title{
+  .brand-card__logo-title {
     font-size: 43px;
   }
+}
+.brand-sec-card-logos{
+  padding-top: 68px;
 }
 .brand-card__logo {
   @include flex(column, center, center);
@@ -47,15 +50,13 @@ overflow: hidden;
     font-size: 29.828px;
     line-height: 36px;
     color: $black;
-    margin-top: 8px;
-
     span {
       color: $orange;
     }
   }
 }
-.brand-third{
-  padding:100px 0;
+.brand-third {
+  padding: 100px 0;
   background: linear-gradient(
       0deg,
       rgba(79, 79, 79, 0.2),
@@ -67,24 +68,24 @@ overflow: hidden;
   // min-height: 100vh;
   position: relative;
   color: $white;
-  &__list{
+  &__list {
     max-width: 1048px;
     width: 100%;
     margin: 0 auto;
     @include flex(column);
-    gap:56px;
+    gap: 56px;
   }
-  &__item{
-    max-width:629px;
-    width:100%;
+  &__item {
+    max-width: 629px;
+    width: 100%;
   }
 }
-.brand-forth{
+.brand-forth {
   position: relative;
-  &-content{
+  &-content {
     z-index: 10;
   }
-  &__text{
-    max-width:926px;
+  &__text {
+    max-width: 926px;
   }
 }

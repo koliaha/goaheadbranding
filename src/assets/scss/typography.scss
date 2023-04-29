@@ -69,6 +69,12 @@ section {
   max-width: 1241px;
   width: 100%;
   margin: 0 auto;
+  &.wide{
+  max-width: 2341px;
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: 85%;
+}
 }
 
 .text-title {
@@ -131,6 +137,7 @@ section {
 
   &.line-dark {
     background: colors.$white;
+    margin-top: 30px;
   }
 }
 .blue-color {

@@ -137,6 +137,11 @@ export default {
         &:hover {
             opacity: 0.8;
         }
+        &.no-hover{
+            &:hover {
+            opacity: 1;
+        }
+        }
     }
 
     &__descriptions {

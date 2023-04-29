@@ -14,7 +14,7 @@
       <div class="card-bottom card-logo-wrapper">
         <div class="card-bottom__item-logo card-bottom__item-logo">
           <!-- <img src="@/assets/img/logos/5.svg" alt="logo" class="second-item__img"> -->
-          <div class="second-item__logo-title second-item__logo-title-big">
+          <div class="second-item__logo-title second-item__logo-title-big second-item-units">
             <span class="blue-color">go</span>design
           </div>
         </div>

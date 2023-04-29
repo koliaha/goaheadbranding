@@ -1,5 +1,5 @@
 <template>
-  <section class="design-first">
+  <section class="design-first" id="brand">
     <DesignHeader />
   </section>
  <section class="design-second" id="logo">

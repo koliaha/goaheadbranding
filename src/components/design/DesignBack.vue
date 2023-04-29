@@ -13,7 +13,7 @@
           :key="index"
         >
           <div
-            class="color-item__box"
+            class="color-item__box no-hover"
             :style="{ backgroundColor: `#${i.hex}` }"
           ></div>
           <div class="color-item__title text-prime">{{ i.name }}</div>
@@ -38,7 +38,7 @@
             :key="index"
           >
             <div
-              class="color-item__box color-item__item-border"
+              class="color-item__box color-item__item-border no-hover"
               :style="{ backgroundColor: `#${i.hex}` }"
             ></div>
             <div class="color-item__title">{{ i.name }}</div>
@@ -80,7 +80,7 @@
     </h3>
   </div>
 
-  <TheSwiper :list-image="[1, 2, 3, 4]" :is-wide="[2]" />
+  <TheSwiper :list-image="items"/>
 </template>
 <script>
 import TheSwiper from "@/components/TheSwiper.vue";
@@ -96,6 +96,16 @@ export default {
     colorMain() {
       return color_back;
     },
+  },
+  data() {
+    return {
+      items: [
+        { content: 1, width: 402 },
+        { content: 2, width: 226 },
+        { content: 3, width: 649 },
+        { content: 4, width: 226 },
+      ],
+    };
   },
   methods: {
     roRgb(str) {

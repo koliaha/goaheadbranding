@@ -18,7 +18,7 @@
 
     <h3 class="text-prime mb-40 text-center mt-120"><b>Примеры SMM</b></h3>
   </div>
-  <TheSwiper :list-image="[51, 52, 53,54,55]"/>
+  <TheSwiper :list-image="items"/>
   <div class="container">
     <p class="text-prime  title__text mt-120 mb-40">Подробнее читайте в гайде по SMM </p>
       <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=mttvpFdAd2o2WFPi-0"
@@ -30,7 +30,18 @@ import TheSwiper from '@/components/TheSwiper.vue'
 export default {
   components: {
     TheSwiper
-  }
+  },
+  data() {
+    return {
+      items: [
+        { content: 51, width: 402 },
+        { content: 52, width: 402 },
+        { content: 53, width: 402 },
+        { content: 54, width: 402 },
+        { content: 55, width: 402 },
+      ],
+    };
+  },
 }
 </script>
 <style lang="scss">

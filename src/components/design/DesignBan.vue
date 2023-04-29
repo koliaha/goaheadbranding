@@ -5,7 +5,7 @@
     </p>
     <h3 class="text-prime mb-40 text-center mt-120"><b>Примеры баннеров</b></h3>
   </div>
-  <TheSwiper :list-image="[61, 62, 63]" :is-wide="[0,1,2]" :slide-perpage="2"/>
+  <TheSwiper :list-image="items" :slide-perpage="2"/>
   <div class="container">
     <div class="design-color-link mt-120">
       <a href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=YF1ac6PQhtuqRvmF-0"
@@ -18,6 +18,14 @@ import TheSwiper from '@/components/TheSwiper.vue'
 export default {
   components: {
     TheSwiper
-  }
+  },data() {
+    return {
+      items: [
+        { content: 61, width: 715 },
+        { content: 62, width: 715 },
+        { content: 33, width: 715 },
+      ],
+    };
+  },
 }
 </script>
