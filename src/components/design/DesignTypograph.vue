@@ -8,9 +8,7 @@
     <h3 class="text-prime mb-40 text-center">
       <b>Примеры применения типографики</b>
     </h3>
-  </div>
-  <TheSwiper :list-image="items" />
-  <div class="container">
+    <TheSwiper :list-image="items" />
     <div class="font-wrapper">
       <h2 class="text-center mt-120 mb-40 robo text-title">Robtronika</h2>
       <p class="text-prime title__text mb-40">Акцентный шрифт</p>
@@ -180,11 +178,7 @@
         <div class="typo-first-list">
           <div class="typo-first-item">
             <div class="text-line-through"></div>
-            <img
-              src="@/assets/img/typo/4.svg"
-              alt="typo"
-              class=""
-            />
+            <img src="@/assets/img/typo/4.svg" alt="typo" class="" />
             <!-- <p class="first-item-text text-orange text-dark-gradient text-line-through">The group <span>u</span>niting tec<span>h</span>nologies and
               services for
               di<span>g</span>ital marketing</p> -->
@@ -247,7 +241,7 @@
     </div>
     <div class="design-color-link mt-120">
       <a
-        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=LtdRqYv0NeXV3vrq-0"
+        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?type=design&node-id=347%3A1243&t=N4C7Jh9VjSYUPGpS-1"
         target="_blank"
         class="btn text-prime"
         >Гайд по типографике</a
@@ -433,17 +427,17 @@ export default {
   }
 }
 .text-line-through {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background: $red;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-35deg);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
   }
+}
 .second-item-text {
   font-size: 54px;
   font-weight: 600;
@@ -485,23 +479,23 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 54px;
-position: relative;
+  position: relative;
   &-wide {
     max-width: 100%;
   }
 }
 .text-line-through-second {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 80%;
-      height: 2px;
-      background: $red;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(-15deg);
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: $red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
   }
+}
 .shop-wrapper {
   margin-top: 80px;
   @include flex(row, center, center);

@@ -69,7 +69,7 @@
     </p>
     <div class="design-imidge-link">
       <a
-        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?t=ODmRI6Rsdo1xZMLf-0"
+        href="https://www.figma.com/file/q6vM5yHOzyf4BMqnvw8Da7/Go-Ahead-bb?type=design&node-id=811%3A3185&t=VtRV6AiXWTnIJvWl-1"
         target="_blank"
         class="btn text-prime"
         >Гайд по фонам</a
@@ -78,9 +78,9 @@
     <h3 class="text-prime mb-40 mt-120 text-center">
       <b>Примеры использования цвета фона</b>
     </h3>
+  <TheSwiper :list-image="items"/>
   </div>
 
-  <TheSwiper :list-image="items"/>
 </template>
 <script>
 import TheSwiper from "@/components/TheSwiper.vue";

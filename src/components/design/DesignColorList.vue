@@ -131,11 +131,11 @@ export default {
         height: 50px;
         background: $black;
         margin-bottom: 6px;
-        cursor: pointer;
-        transition: 0.3s opacity;
+        // cursor: pointer;
+        // transition: 0.3s opacity;
 
         &:hover {
-            opacity: 0.8;
+            // opacity: 0.8;
         }
         &.no-hover{
             &:hover {

@@ -8,13 +8,14 @@
           slidesPerView: `${slidePerpage || 3}`,
         },
       }" -->
+      <!-- :centeredSlides="true" -->
+
     <swiper
       slidesPerView="auto"
       :spaceBetween="120"
       :navigation="true"
       :modules="modules"
-      :initialSlide="1"
-      :centeredSlides="true"
+      :initialSlide="0"
       class="mySwiper"
       :loop="loop"
     >
@@ -62,6 +63,7 @@ export default {
 //   justify-content: center;
 //   align-items: center;
 //   margin: 35px 0 !important;
+user-select: none;
   img {
     // display: block;
     // height: 100%;
@@ -75,6 +77,7 @@ export default {
 .swiper-custom {
   .swiper {
     padding-bottom: 80px;
+    overflow: visible;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -92,11 +95,11 @@ export default {
     }
   }
   .swiper-button-prev {
-    left: 46%;
+    left: 45%;
     padding-right: 5px;
   }
   .swiper-button-next {
-    right: 46%;
+    right: 45%;
     padding-left: 5px;
   }
 }

@@ -9,10 +9,8 @@
       композиционная система.</p>
 
     <h3 class="text-prime mb-40 mt-120 text-center"><b>Примеры использования презентаций</b></h3>
-  </div>
   <TheSwiper :list-image="items" :slide-perpage="2"/>
-  <div class="container">
-    <p class="text-prime  title__text mt-120 mb-40">Подробнее читайте в гайде по презентации</p>
+  <p class="text-prime  title__text mt-120 mb-40">Подробнее читайте в гайде по презентации</p>
     <a href="https://disk.yandex.ru/d/FqrDypOnNwqrGw" target="_blank" class="btn text-prime">Гайд по презентации</a>
   </div>
 </template>

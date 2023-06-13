@@ -69,12 +69,12 @@ section {
   max-width: 1241px;
   width: 100%;
   margin: 0 auto;
-  &.wide{
-  max-width: 2341px;
+  &.wide {
+    max-width: 2341px;
   }
   @media screen and (max-width: 1400px) {
-    max-width: 85%;
-}
+    // max-width: 85%;
+  }
 }
 
 .text-title {
@@ -112,10 +112,10 @@ section {
 .mb-40 {
   margin-bottom: 40px;
 }
-.mt-80{
+.mt-80 {
   margin-top: 80px;
 }
-.mb-80{
+.mb-80 {
   margin-bottom: 80px;
 }
 .mt-120 {
